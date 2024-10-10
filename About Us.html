@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+</head>
+<style>
+    /* Header Styling */
+header {
+    background: #0062be;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img.logo {
+    max-width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #b2f5ea;
+}
+
+footer {
+    background-color: #0e4d64; 
+    color: #ffffff; 
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+
+.footer-about, .footer-links, .footer-social, .footer-address {
+    margin: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-about h3, .footer-links h3, .footer-social h3, .footer-address h3 {
+    margin-bottom: 15px;
+    color: #b2f5ea; 
+}
+.footer-links ul,a{
+
+      margin-left: 1rem;
+}
+
+.footer-links ul, .footer-social ul {
+  
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social {
+    text-align: center; 
+}
+
+.footer-social ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 0px; 
+    padding: 0;
+    list-style: none;
+    margin: 0; 
+}
+
+.footer-social ul li a img {
+    width: 35px; 
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-social ul li a img:hover {
+    transform: scale(1.2); 
+}
+.footer-links ul li, .footer-social ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+    color: #ffffff; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+    color: #b2f5ea; 
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #b2f5ea;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-address p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    padding: 20px;
+}
+
+h2 {
+    font-weight: 600;
+    color: #333;
+}
+
+.card .icon {
+    animation: pulse 2s infinite;
+}
+
+.timeline {
+    position: relative;
+    padding: 40px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: #e60000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    transform: translateX(30%);
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-icon {
+    width: 20px;
+    height: 20px;
+    background: #e60000;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+}
+
+
+</style>
+<body>
+    <div class="head">
+        <header>
+            <div class="logo-container">
+                <a href="#"><img src="logo.png" class="logo" alt="Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./product.html">Products</a></li>
+                        <li><a href="./About Us.html">About Us</a></li>
+                        <li><a href="./Gallery.html">Gallery</a></li>
+                        <li><a href="./Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
+    
+    <header class="bg-primary text-white text-center py-5">
+        <h1 class="display-4">Welcome to Cold Drink Heaven!</h1>
+        <p>Your Refreshment, Our Passion.</p>
+    </header>
+
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+                <img src="./cola.avif" alt="Cold Drink Image" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4 animate__animated animate__fadeInLeft">Who Are We?</h2>
+                <p class="animate__animated animate__fadeInLeft animate__delay-1s">
+                    At Cold Drink Heaven, we are passionate about delivering the most refreshing cold drinks to quench your thirst. We started our journey with a simple vision - to bring joy to our customers through an unforgettable taste experience.
+                </p>
+                <p class="animate__animated animate__fadeInLeft animate__delay-2s">
+                    Our drinks are crafted using the finest ingredients to ensure a perfect balance of flavor and fizz. We believe in quality, innovation, and staying true to our roots, bringing you drinks that speak the language of fun and flavor.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-5 animate__animated animate__zoomIn">Why Choose Us?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body">
+                            <div class="icon mb-4">
+                                <i class="fas fa-leaf fa-3x text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Natural Ingredients</h5>
+                            <p class="card-text">Our drinks are crafted using the finest natural ingredients for a taste that refreshes and delights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body">
+                            <div class="icon mb-4">
+                                <i class="fas fa-heart fa-3x text-danger"></i>
+                            </div>
+                            <h5 class="card-title">Loved By All</h5>
+                            <p class="card-text">From children to adults, our range of cold drinks is loved by all age groups and perfect for any occasion.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body">
+                            <div class="icon mb-4">
+                                <i class="fas fa-truck fa-3x text-success"></i>
+                            </div>
+                            <h5 class="card-title">Fast Delivery</h5>
+                            <p class="card-text">Get your favorite cold drinks delivered to your doorstep with our fast and reliable delivery service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content animate__animated animate__fadeInRight">
+                        <h4>2010 - The Beginning</h4>
+                        <p>It all began in a small kitchen where we experimented with flavors to create the perfect blend of freshness and taste.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content animate__animated animate__fadeInLeft">
+                        <h4>2015 - Expanding Horizons</h4>
+                        <p>We expanded to multiple outlets across the country, delivering the same consistent taste to our loyal customers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"></div>
+                    <div class="timeline-content animate__animated animate__fadeInRight">
+                        <h4>2022 - A New Chapter</h4>
+                        <p>With a focus on sustainability, we adopted eco-friendly packaging and continued to innovate our flavors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>We are dedicated to bringing you the freshest and most refreshing cold drinks. Stay cool and hydrated with our premium selections.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./About Us.html">About Us</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-address">
+                <h3>Our Address</h3>
+                <p>Coldrink Company</p>
+                <p>123 Refreshment Street</p>
+                <p>Beverage City, BC 54321</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><img src="./face.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="./twit.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="./insta.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="./youtube.png" alt="YouTube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Coldrink Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
